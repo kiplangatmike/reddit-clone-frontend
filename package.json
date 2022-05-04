@@ -1,7 +1,6 @@
 {
   "name": "reddit-clone",
   "version": "0.1.0",
-  "proxy": "https://reddit-clone-summative.herokuapp.com",
   "private": true,
   "dependencies": {    
     "@testing-library/jest-dom": "^5.16.4",
