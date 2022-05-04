@@ -7,7 +7,7 @@ export default function Posts() {
     const [posts, setPosts] = useState ([])
     useEffect (() => {
       axios
-      .get('/api/posts/')
+      .get('https://reddit-clone-summative.herokuapp.com/api/posts')
       .then(res => setPosts(res.data))
       .catch(error => console.log(error));
     },[])
