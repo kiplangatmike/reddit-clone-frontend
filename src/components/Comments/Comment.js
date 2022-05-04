@@ -16,7 +16,7 @@ export default function  Comment() {
     const [post, setPost] = useState ([]);
     useEffect (() => {
       axios
-      .get(`https://reddit-clone-summative.herokuapp.com/api/posts/${params._id}`)
+      .get(`/api/posts/${params._id}`)
       .then(res => setPost(res.data.post))
       .catch(error => console.log(error));
      
