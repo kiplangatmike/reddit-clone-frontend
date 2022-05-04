@@ -44,7 +44,7 @@ export default function  Comment() {
        
         e.preventDefault();
         try {
-            const url = "http://localhost:4001/api/comments";
+            const url = "https://reddit-clone-summative.herokuapp.com/api/comments";
             const {data: res} = await axios.post(url,{...data, commentedBy: userId });
             
             // navigate ("/UserAccount")

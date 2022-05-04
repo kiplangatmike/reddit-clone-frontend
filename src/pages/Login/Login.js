@@ -21,7 +21,7 @@ export default function Login() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const url = "http://localhost:4001/api/login";
+            const url = "https://reddit-clone-summative.herokuapp.com/api/login";
             const {data: res} = await axios.post(url,data);
             localStorage.setItem("token", res.token);
             localStorage.setItem('user', JSON.stringify(res.user));

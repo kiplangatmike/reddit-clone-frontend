@@ -33,7 +33,7 @@ const handleSubmit = async(e) => {
    let userId = JSON.parse(localStorage.getItem('user'))._id;
     e.preventDefault();
     try {
-        const url = "http://localhost:4001/api/posts";
+        const url = "https://reddit-clone-summative.herokuapp.com/api/posts";
         const {data: res} = await axios.post(url,{...data, postedBy: userId});
         // navigate ("/Login")
         

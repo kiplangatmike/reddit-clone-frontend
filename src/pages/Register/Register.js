@@ -22,7 +22,7 @@ export default function Register() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const url = "http://localhost:4001/api/register";
+            const url = "https://reddit-clone-summative.herokuapp.com/api/register";
             const {data: res} = await axios.post(url,data);
             navigate ("/UserAccount")
             console.log(res.message);
